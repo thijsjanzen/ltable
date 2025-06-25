@@ -1,12 +1,25 @@
-Package: ltable
 Type: Package
+Package: ltable
 Title: Concise Summary of What the Package Does
 Version: 1.0
 Date: 2025-06-25
-Authors@R: person("Thijs", "Janzen", role = c("aut", "cre"), email = "t.janzen@rug.nl")
+Authors@R: 
+    person("Thijs", "Janzen", , "t.janzen@rug.nl", role = c("aut", "cre"))
 Description: More about what it does (maybe more than one line).
 License: GPL (>= 2)
-Imports: Rcpp (>= 1.0.14), ape, ggplot2
-LinkingTo: Rcpp
-RoxygenNote: 7.3.2
+Imports: 
+    ape,
+    ggplot2,
+    Rcpp (>= 1.0.14),
+    rlang,
+    tibble,
+    treestats
+Suggests: 
+    DDD,
+    knitr
+LinkingTo: 
+    Rcpp
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
+RoxygenNote: 7.3.2

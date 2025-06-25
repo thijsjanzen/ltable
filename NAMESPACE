@@ -3,4 +3,5 @@
 export(plot_ltable)
 export(sim_bd)
 import(Rcpp)
+importFrom(rlang,.data)
 useDynLib(ltable, .registration = TRUE)

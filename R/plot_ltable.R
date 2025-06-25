@@ -56,6 +56,7 @@ update_pos <- function(ltable, ID, pos_table) {
 #' for presentation. When FALSE, the user can modify the resulting ggplot2
 #' object her/himself.
 #' @returns ggplot2 object
+#' @importFrom rlang .data
 #' @export
 plot_ltable <- function(ltable,
                         plot_hybrid = FALSE,

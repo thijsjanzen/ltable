@@ -2,11 +2,10 @@
 title: "demonstration"
 author: "Thijs Janzen"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Example: abc}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
+output:
+  pdf_document: default
+  rmarkdown::html_vignette: default
+vignette: "%\\VignetteIndexEntry{Example: abc} %\\VignetteEncoding{UTF-8} %\\VignetteEngine{knitr::rmarkdown}\n"
 ---
 
 ```{r setup, include=FALSE}
@@ -66,3 +65,17 @@ res <- DDD::dd_sim(pars = c(0.5, 0.1, 100),
                    ddmodel = 1)
 ltable::plot_ltable(res$L, use_factor_ID = TRUE)
 ```
+
+### Large trees
+Ltables are not limited by size, and we can plot (very) large trees indeed.
+Because the package tries to reserve space on the x-axis for every species
+(such that each species has a unique X coordinate), this tends to result in 
+peculiar looking trees. Please remember that the x-axis is unitless and has
+no meaning!
+```{r large}
+res <- ltable::sim_bd(parameters = c(0.5, 0.5),
+                      crown_age = 50,
+                      seed = 4)
+ltable::plot_ltable(res$ltable)
+```
+

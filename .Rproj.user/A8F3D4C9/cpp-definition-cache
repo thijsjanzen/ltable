@@ -1,0 +1,366 @@
+[
+    {
+        "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.cpp",
+        "file_last_write": 1750849409.0,
+        "definitions": [
+            {
+                "usr": "c:@N@util@F@numericmatrix_to_vector#&1$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#*$@N@std@N@__1@S@vector>#$@N@std@N@__1@S@vector>#d#$@N@std@N@__1@S@allocator>#d#$@N@std@N@__1@S@allocator>#S4_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "numericmatrix_to_vector(const nummat &, std::vector<vec> *)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.cpp",
+                "line": 23,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@N@util@F@vector_to_numericmatrix#&1$@N@std@N@__1@S@vector>#$@N@std@N@__1@S@vector>#d#$@N@std@N@__1@S@allocator>#d#$@N@std@N@__1@S@allocator>#S2_#*$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "vector_to_numericmatrix(const std::vector<vec> &, nummat *)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.cpp",
+                "line": 35,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@N@util@F@list_to_nummatmat#&1$@N@Rcpp@S@Vector>#VI19#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "list_to_nummatmat(const Rcpp::List &)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.cpp",
+                "line": 47,
+                "column": 13,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@sim_bd_cpp#&1$@N@std@N@__1@S@vector>#d#$@N@std@N@__1@S@allocator>#d#d#d#b#d#b#b#I#I#b#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sim_bd_cpp(const std::vector<double> &, double, double, bool, double, bool, bool, int, int, bool, bool)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.cpp",
+                "line": 65,
+                "column": 12,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+        "file_last_write": 1750850258.0,
+        "definitions": [
+            {
+                "usr": "c:@E@event_type",
+                "kind": 4,
+                "parent_name": "",
+                "name": "event_type",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 24,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@event_type@speciation",
+                "kind": 5,
+                "parent_name": "",
+                "name": "speciation",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 24,
+                "column": 18,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@event_type@extinction",
+                "kind": 5,
+                "parent_name": "",
+                "name": "extinction",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 24,
+                "column": 30,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@event_type@max_num",
+                "kind": 5,
+                "parent_name": "",
+                "name": "max_num",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 24,
+                "column": 42,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type",
+                "kind": 4,
+                "parent_name": "",
+                "name": "finish_type",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 26,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type@done",
+                "kind": 5,
+                "parent_name": "",
+                "name": "done",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 26,
+                "column": 19,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type@extinct",
+                "kind": 5,
+                "parent_name": "",
+                "name": "extinct",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 26,
+                "column": 25,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type@overshoot",
+                "kind": 5,
+                "parent_name": "",
+                "name": "overshoot",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 26,
+                "column": 34,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type@conditioning",
+                "kind": 5,
+                "parent_name": "",
+                "name": "conditioning",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 26,
+                "column": 45,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type@not_run_yet",
+                "kind": 5,
+                "parent_name": "",
+                "name": "not_run_yet",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 26,
+                "column": 59,
+                "hidden": false
+            },
+            {
+                "usr": "c:@E@finish_type@max_types",
+                "kind": 5,
+                "parent_name": "",
+                "name": "max_types",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 27,
+                "column": 19,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ltab_species",
+                "kind": 3,
+                "parent_name": "",
+                "name": "ltab_species",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 29,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ltab_species@F@get_id#1",
+                "kind": 7,
+                "parent_name": "ltab_species",
+                "name": "get_id",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 34,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ltab_species@F@get_parent#1",
+                "kind": 7,
+                "parent_name": "ltab_species",
+                "name": "get_parent",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 38,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ltab_species@F@set_death#d#",
+                "kind": 7,
+                "parent_name": "ltab_species",
+                "name": "set_death(double)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 42,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ltab_species@F@is_dead#1",
+                "kind": 7,
+                "parent_name": "ltab_species",
+                "name": "is_dead",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 46,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@ltab_species@F@get_data#1",
+                "kind": 7,
+                "parent_name": "ltab_species",
+                "name": "get_data",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 51,
+                "column": 25,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim",
+                "kind": 3,
+                "parent_name": "",
+                "name": "secsse_sim",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 63,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@run#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "run",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 104,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@apply_event#1$@E@event_type#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "apply_event(const event_type)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 160,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@event_extinction#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "event_extinction",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 175,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@event_speciation#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "event_speciation",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 187,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@update_rates#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "update_rates",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 207,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@draw_event#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "draw_event",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 213,
+                "column": 14,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@draw_dt#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "draw_dt",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 227,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@num_species#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "num_species",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 234,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@ltable_size#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "ltable_size",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 242,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@extract_ltable#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "extract_ltable",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 246,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@update_tree_size_hist#*I#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "update_tree_size_hist(int *)",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 256,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@sample_from_pop#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "sample_from_pop",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 270,
+                "column": 10,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@secsse_sim@F@evolve_until_crown#",
+                "kind": 7,
+                "parent_name": "secsse_sim",
+                "name": "evolve_until_crown",
+                "file": "/Users/thijsjanzen/Documents/GitHub/ltable/src/sim.h",
+                "line": 279,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]

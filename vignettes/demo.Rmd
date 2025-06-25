@@ -1,0 +1,57 @@
+---
+title: "demonstration"
+author: "Thijs Janzen"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Ltables
+
+Ltables describe the procession of new species arising through speciation,
+where each species is tracked in the table on a separate row, indicating the
+time of birth, parent ID, self ID and finally the time of death. If the species
+did not die (go extinct), the time of death is -1. 
+We will demonstrate ltables using the included simulation code of the
+birth-death model:
+
+```{r yule}
+res <- ltable::sim_bd(parameters = c(0.5, 0),
+                      crown_age = 5,
+                      seed = 4)
+res$ltable
+```
+
+Ltables can be converted to phy objects using either `[DDD::L2phylo]` or 
+`[treestats::l_to_phylo]`. However, by this conversion, some information is lost,
+primarily the information on parentage. Instead, this R package allows for the 
+direct visualisation of the Ltable, leaving information of parentage available.
+```{r plot}
+ltable::plot_ltable(res$ltable)
+```
+Compare that to the resulting phylogeny:
+```{r plot_ape}
+plot(res$phy, direction = "up")
+```
+
+By default, branches are colored using a continuous gradient - this is 
+especially useful for large trees with many species in it. Instead, we can also
+color the tree giving distinct colors to the branches:
+```{r plot2}
+ltable::plot_ltable(res$ltable, use_factor_ID = TRUE)
+```
+
+### Extinct branches
+Ltables can also have extinct species, and those can be plotted as well:
+```{r bd}
+res <- ltable::sim_bd(parameters = c(0.5, 0.2),
+                      crown_age = 5,
+                      seed = 4)
+res$ltable
+ltable::plot_ltable(res$ltable, use_factor_ID = TRUE)
+```
+
+

@@ -32,7 +32,7 @@ update_pos <- function(ltable, ID, pos_table) {
 
   to_claim <- available[1:num_tips_connected]
   if (parent_direction == -1) {
-    to_claim <- tail(available, num_tips_connected)
+    to_claim <- utils::tail(available, num_tips_connected)
   }
   pos_table[to_claim, 1] <- ID
 
@@ -48,6 +48,14 @@ update_pos <- function(ltable, ID, pos_table) {
 
 #' plot ltable as tree
 #' @param ltable ltable
+#' @param plot_hybrid if there is an extra column added to the ltable to
+#' indicate hybrid ancestry, this can be used in plotting as well
+#' @param use_factor_ID should different species be colored with distinct colors,
+#' or should a gradient of colors be used? Default is FALSE
+#' @param modify_theme When TRUE (default), the resulting plot is cleaned up
+#' for presentation. When FALSE, the user can modify the resulting ggplot2
+#' object her/himself.
+#' @returns ggplot2 object
 #' @export
 plot_ltable <- function(ltable,
                         plot_hybrid = FALSE,

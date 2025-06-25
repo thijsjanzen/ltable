@@ -2,7 +2,11 @@
 title: "demonstration"
 author: "Thijs Janzen"
 date: "`r Sys.Date()`"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Example: abc}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include=FALSE}
@@ -54,4 +58,11 @@ res$ltable
 ltable::plot_ltable(res$ltable, use_factor_ID = TRUE)
 ```
 
-
+### Using DDD
+The DDD package by default generates ltables, we can use those as well:
+```{r ddd}
+res <- DDD::dd_sim(pars = c(0.5, 0.1, 100),
+                   age = 5,
+                   ddmodel = 1)
+ltable::plot_ltable(res$L, use_factor_ID = TRUE)
+```

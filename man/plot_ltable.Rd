@@ -13,6 +13,19 @@ plot_ltable(
 }
 \arguments{
 \item{ltable}{ltable}
+
+\item{plot_hybrid}{if there is an extra column added to the ltable to
+indicate hybrid ancestry, this can be used in plotting as well}
+
+\item{use_factor_ID}{should different species be colored with distinct colors,
+or should a gradient of colors be used? Default is FALSE}
+
+\item{modify_theme}{When TRUE (default), the resulting plot is cleaned up
+for presentation. When FALSE, the user can modify the resulting ggplot2
+object her/himself.}
+}
+\value{
+ggplot2 object
 }
 \description{
 plot ltable as tree

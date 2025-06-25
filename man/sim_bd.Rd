@@ -14,7 +14,7 @@ sim_bd(
   non_extinction = TRUE,
   verbose = FALSE,
   max_tries = 1e+06,
-  drop_extinct = TRUE,
+  drop_extinct = FALSE,
   start_at_crown = TRUE,
   seed = NULL
 )
